@@ -1,0 +1,98 @@
+시험
+
+객체object : key와 value로 이루어진 property의 모음
+
+1. 변수 선언 시 선언자를 반드시 붙여라
+
+2. 선언자는 총 세 종류가 있다.
+
+자바스크립트는  html의 body 끝나기 전에 써준다.
+
+var      안쓴다. 절대 쓰지마!!! 가끔 코딩 선배들이 쓰는 데 뭐라하진마라. (재선언 가능)
+let       안쓴다. 반복문 i 돌릴 때
+const   이걸 써라. 
+          근데 작동 안되면 let써라.
+          초기화 안될 수 있는 걸 막아줌
+변수를 바꿀 일이 별로 없다. 있다면  let써라!!!!!
+
+자료형
+
+Number: 정수 실수 다 Number
+string: char+[] 
+boolean: true+false =>소문자로 시작
+const a=true;
+const b=false;
+
+console.log(typeof b);
+console.log(typeof a);
+
+const c="true";
+const d=null;
+console.log(typeof d);
+
+console.log(typeof undefined);
+
+0 숫자0
+
+null 의도적으로 비워놓음(뭘 넣을지 몰라서 그냥)
+
+undefined 의도치 않게 비어있음.
+
+arr 같은 타입으로 일치시키세요!!!!
+    크기선언 안함
+    오브젝트 안에 존재
+    const arr=[1,'a',true];
+    console.log(arr[3]); 에러가 아닌데... 출력은  undefined
+
+    함수
+console.log => log==함수
+            => .==객체로 가는 
+            console:객체
+            객체 안에 있는 함수가  매서드
+함수 선언이 아래로 가도 실행되지만 쓰지마!!!
+          타입명 대문자를 변수 앞에 쓰면 타입 바꿔줌
+           ex) return String 2; ==>return '2';
+
+함수 자체를 변수에 넣는다????
+           function retA (){
+  return 'a';
+}
+
+const sample=retA;
+
+
+1. 객체 object
+2. 함수 function
+3. 배열 array
+
+객체 : 이름을 각 각 달아라!!!!
+const person={
+  name:"이자룡",
+  dateOfBirth:1993,
+  familyMember:["아빠","엄마","할머니"],
+  job:"싸피 강사",
+  isMerriaged:true
+};
+추가나 삭제는 가능하지만 새로 만드는 것은 불가능!!!!
+
+const a="abc"+"bbq";
+const b="bbq"+10;
+console.log(a.length,b.length);
+
+const a="abc"+"bbq";
+const b="bbq"+10;
+console.log(a,b);
+
+const arr=[1,2,3,4,5];
+console.log(arr.length);
+
+console.log(1==='1'); 타입까지 비교
+
+console.log(1!=='1');
+
+let은 이때만 씁니다.!!!!!!!
+const arr=[1,2,3];
+
+for (let i=0;i<arr.length;i++){
+  console.log(arr[i]);
+}
