@@ -1,15 +1,16 @@
-const person = {
-  name: "이자룡",
-  familyMembers: ["아빠", "엄마", "할머니"],
-  job: "싸피 강사",
-  isMerriaged: true,
-  codingSkill: {
-    frontend: ["vue.js", "react.js", "vanillaJS"],
-    backend: ["node.js", "php", "django"],
-    database: ["mariadb", "postgresql", "mysql", "sqlite"],
-  },
+const arr=[1,2,3,1,2,3,1,2,3];
+const k={
+  count:0,
+  exist:0
 };
-console.log(person.name);
-console.log(person.familyMembers[2]);
-console.log(person.codingSkill.frontend[1]);
-console.log(person.codingSkill.frontend);
+for (let i=0;i<arr.length;i++){
+  if(arr[i]==1)k.count++;
+}
+console.log(k.count);
+
+const arr2=["A","E","W","Q","A"];
+for (let i=0;i<arr2.length;i++){
+  if(arr2[i]==="A")k.exist++;
+}
+if(k.exist!==0)console.log("O");
+else console.log("X");
