@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .flex-wrapper{
+      display:flex;
+      height:200px;
+     /* <!-- <justify-content>
+      메인 축에 대한 정렬 --> */
+      
+      /* <!-- aligin-itms default strech
+      메인 축에 대한 교차축 정려ㅕㄹ --> */
+flex-direction: row;
+  }
+  div{
+    border:1px solid black;
+  }
+  .a{
+    flex:1;
+  }
+  .b{
+flex:3;
+  }
+  .c{
+    flex:1;
+  }
+  .box1-wrapper{
+    display:flex;
+    /* 컨테이너가 한줄에 담을 여유공간이 없을 떄 아이템에 대한 줄바꿈을 결정하는 옵션*/
+    flex-wrap:wrap;
+    height:300px
+  }
+  .box1{
+    width:80px;
+    height:80px;
+    border:1px solid blue;
+    background-color: skyblue;
+  }
+  </style>
+  
+  <title>Document</title>
+</head>
+<body>
+<div class="flex-wrapper">
+  <div class="a">a</div>
+  <div class="b">b</div>
+  <div class="c">c</div>
+</div>
+<div class="box1-wrapper">
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+  <div class="box1">test</div>
+</div>
+</body>
+</html>
