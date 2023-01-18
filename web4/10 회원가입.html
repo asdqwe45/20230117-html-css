@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <div class="ID">
+    <input class="id2" type="text" >
+  </div>
+  <div class="Password">
+    <input class="password2" type="password" >
+  </div>
+  <button class="btn">회원가입하기</button>
+  
+  <script>
+  const id=document.querySelector(".id2");
+  const password=document.querySelector(".password2");
+  const btn=document.querySelector(".btn");
+
+  btn.addEventListener("click",function(){
+    if(password.value===""||id.value===""){
+      alert("아이디 및 비밀번호를 입력하세요");
+    }
+    else{
+      alert("성공");
+    }
+  })
+
+  </script>
+</body>
+</html>

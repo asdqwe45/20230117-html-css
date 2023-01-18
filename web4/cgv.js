@@ -1,21 +1,21 @@
 console.log("TEST");
 
-const title1=document.querySelector("#contents > div.wrap-movie-chart > div.sect-movie-chart > ol:nth-child(2) > li:nth-child(1) > div.box-contents > a > strong")
+const title1=document.querySelector("ol:nth-child(2) > li:nth-child(1) > div.box-contents > a > strong")
 console.log(title1.textContent);
 
-const percent1=document.querySelector("#contents > div.wrap-movie-chart > div.sect-movie-chart > ol:nth-child(2) > li:nth-child(1) > div.box-contents > div > strong > span")
+const percent1=document.querySelector("ol:nth-child(2) > li:nth-child(1) > div.box-contents > div > strong > span")
 console.log(percent1.textContent);
 
-const date1=document.querySelector("#contents > div.wrap-movie-chart > div.sect-movie-chart > ol:nth-child(2) > li:nth-child(1) > div.box-contents > div > strong > span")
+const date1=document.querySelector("ol:nth-child(2) > li:nth-child(1) > div.box-contents > div > strong > span")
 console.log(date1.textContent.trim());
 
-const title2=document.querySelector("#contents > div.wrap-movie-chart > div.sect-movie-chart > ol:nth-child(2) > li:nth-child(2) > div.box-contents > a > strong")
+const title2=document.querySelector("ol:nth-child(2) > li:nth-child(2) > div.box-contents > a > strong")
 title2.textContent="삼겹살과 그대라면";
 
-const percent2=document.querySelector("#contents > div.wrap-movie-chart > div.sect-movie-chart > ol:nth-child(2) > li:nth-child(2) > div.box-contents > div > strong > span")
+const percent2=document.querySelector("ol:nth-child(2) > li:nth-child(2) > div.box-contents > div > strong > span")
 percent2.textContent="5%";
 
-const date2=document.querySelector("#contents > div.wrap-movie-chart > div.sect-movie-chart > ol:nth-child(2) > li:nth-child(2) > div.box-contents > span.txt-info > strong")
+const date2=document.querySelector("ol:nth-child(2) > li:nth-child(2) > div.box-contents > span.txt-info > strong")
 date2.textContent=" 1985.07.27 ";
 
 // const image1=document.querySelector("#contents > div.wrap-movie-chart > div.sect-movie-chart > ol:nth-child(2) > li:nth-child(1) > div.box-image > a > span > img")
@@ -31,13 +31,26 @@ date2.textContent=" 1985.07.27 ";
 //이미지 title swap;
 //
 
+// const title3=document.querySelector("ol:nth-child(2) > li:nth-child(3) > div.box-contents > a > strong")
+
+// let temp=title1.textContent;
+// title1.textContent=title3.textContent;
+// title3.textContent=temp;
+
+// const onePoster=document.querySelector("ol:nth-child(2) > li:nth-child(1) > div.box-image > a > span > img");
+// const threePoster=document.querySelector("ol:nth-child(2) > li:nth-child(3) > div.box-image > a > span > img");
+
+// let srcTemp=onePoster.src;
+// onePoster.src=threePoster.src;
+// threePoster.src=srcTemp;
+
 
 const title3=document.querySelector("#contents > div.wrap-movie-chart > div.sect-movie-chart > ol:nth-child(2) > li:nth-child(3) > div.box-contents > a > strong")
-let temp=title.textContent;
-title.textContent=title3.textContent;
+let temp=title1.textContent;
+title1.textContent=title3.textContent;
 title3.textContent=temp;
 
-//이미지바꿔치기
+// //이미지바꿔치기
 const onePoster=document.querySelector("#contents > div.wrap-movie-chart > div.sect-movie-chart > ol:nth-child(2) > li:nth-child(1) > div.box-image > a > span > img")
 
 const threePoster=document.querySelector("#contents > div.wrap-movie-chart > div.sect-movie-chart > ol:nth-child(2) > li:nth-child(3) > div.box-image > a > span > img")
@@ -45,3 +58,14 @@ let srcTemp=onePoster.src;
 onePoster.src=threePoster.src;
 threePoster.src=srcTemp;
 
+const boxContents=document.querySelectorAll(".box-contents");
+for(let i=0;i<boxContents.length;i++){
+console.log(boxContents[i].innerHTML);
+}
+const titleP=document.querySelectorAll(".thumb-image");
+for(let i=0;i<titleP.length;i++){
+  console.log(titleP[i].innerHTML);
+}
+
+const Check=document.querySelectorAll(".checked")
+console.log(Check);

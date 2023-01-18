@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>안녕 나는 자룡이</h1>
+    <div class="container">
+      <div class="img-wrapper">
+        <img src="./web4/jony.jpg" alt="자룡이" height="300"/>
+      </div>
+      <div class="hobby-list">
+        <h2>취미목록</h2>
+        <ul>
+          <li>영화보기</li>
+          <li>코딩하기</li>
+          <li>산책가기</li>
+          <li>게임하기</li>
+          <li>등산가기</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+    //  const img=document.querySelector(".img-wrapper > img")
+    //  img.src="./web4/profile.jpg"
+
+     // h1을 가져오면 h1을 하는게 좋다.
+    //  const h1=document.querySelector("body > h1")
+    //  h1.textContent="안녕 나는 재명이";
+
+    //queryselector는 document만 가능한게 아니라 모든 곳에서 가져올 수 있다.
+    const imgWrapper=document.querySelector(".img-wrapper");
+    const img=imgWrapper.querySelector("img");
+    img.src="./web4/profile.jpg";
+    
+    //여러개일 때 querySelectorAll로 모두 가져온다.
+    //All을 안 쓰면 제 처음 리스트만 가져온다.
+    //배열에서 쓰는 매서드가 안먹힐 수 있다.
+    const li=document.querySelectorAll(".hobby-list > ul > li");
+    console.log(li);
+    
+    // >바로 밑의 자식을 찾는다. 바로 밑의 자식이 아닌 넘어갈 때는 >빼면 됨
+    const li1=document.querySelectorAll(".hobby-list > ul > li");
+    console.log(li1);
+
+    const li2=document.querySelectorAll(".hobby-list li");
+    console.log(li2);
+
+    //첫 번째 리스트로 갈려면...
+    li[0].textContent="싸피";
+
+    //한번 쓰고 말거라 변수 선언 불필요
+    document.querySelectorAll(".hobby-list > ul > li")[2].textContent="하하하";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>나의 결혼 상대자 선택하자!</h1>
+    <span>희망 배우자:</span>
+     <select name="" id="">
+      <option value="">선택하세요</option>
+      <option value="아이유">아이유</option>
+      <option value="전지현">전지현</option>
+      <option value="장미란">장미란</option>
+      <option value="김민경">김민경</option>
+     </select>
+
+    <div class="result-txt"></div>
+
+    <script>
+      
+      const sel=document.querySelector("select");
+      const resultTxt=document.querySelector(".result=txt");
+      sel.addEventListener('change',function(evt){
+        resultTxt.textContent=evt.target.value;
+      })
+
+    </script>
+</body>
+</html>

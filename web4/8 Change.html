@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HTML : 대문자 인식X -->
+    <h1>change</h1>
+    <input type="text" />
+    <div class="result-wrapper"></div>
+
+    <script>
+      const input = document.querySelector("input");
+      const resultWrapper = document.querySelector(".result-wrapper");
+      //브라우저에 일어난 모든 사건
+      input.addEventListener("change", function (evt) {
+        resultWrapper.textContent=evt.target.value;
+      });
+    </script>
+  </body>
+</html>

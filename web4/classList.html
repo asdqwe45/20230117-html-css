@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .font-red {
+        color: red;
+      }
+      .font-blue {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="font-size">HI</h1>
+    <button class="button1">빨간색으로 만들자</button>
+    <button class="button2">까만색으로 만들자</button>
+    <button class="black-or-red">까만 빨강</button>
+    <button class="is-red">빨강이 있느냐</button>
+    <button class="red-to-blue">빨강을 파랑으로</button>
+    <script>
+      const h1 = document.querySelector("h1");
+      const btn1 = document.querySelector(".button1");
+      const btn2 = document.querySelector(".button2");
+      const btn3 = document.querySelector(".black-or-red");
+      const isRed = document.querySelector(".is-red");
+      const redToBlue = document.querySelector(".red-to-blue");
+      // class의 속성값 추가
+      btn1.addEventListener("click", function () {
+        h1.classList.add("font-red");
+      });
+      // class의 속성값 제거
+      btn2.addEventListener("click", function () {
+        h1.classList.remove("font-blue");
+      });
+      // class의 속성값 추가/제거
+      btn3.addEventListener("click", function () {
+        h1.classList.toggle("font-red");
+      });
+      // 특정 class명이 추가 되었있는지 확인(true/false)
+      isRed.addEventListener("click", function () {
+        const flag = h1.classList.contains("font-red");
+        console.log(flag);
+      });
+      //특정 클래스 속성 값을 새로운 속성 값으로 교체한다.
+      redToBlue.addEventListener("click", function () {
+        h1.classList.replace("font-red", "font-blue");
+      });
+    </script>
+  </body>
+</html>

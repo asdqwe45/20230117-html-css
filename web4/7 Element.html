@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h1>이벤트</h1>
+  <button class="show-info-btn">나의 정보를 보여줘</button>
+  <div class="info-wrapper"></div>
+
+  <script>
+    const showInfoBtn=document.querySelector(".show-info-btn");
+    const infoWrapper=document.querySelector(".info-wrapper");
+    showInfoBtn.addEventListener("click",function(){
+      infoWrapper.innerHTML=`
+      <div class="title-msg">하이</div>
+      `;
+    });
+  </script>
+</body>
+</html>

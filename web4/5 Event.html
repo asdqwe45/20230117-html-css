@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>이벤트</h1>
+  <!-- inlineEvent방식 -->
+  <!-- //클릭하면 showMessage함수가 실행 -->
+  <!-- <button onclick="showMessage()">나를 클릭해</button> -->
+  <!-- <button>나를 클릭해</button> -->
+  <!-- 꼭 버튼일 필요없다. -->
+    <div>나를 클릭해</div>
+
+  <script>
+    function showMessage(){
+      console.log("안녕!!");
+    }
+    function showMessage2(){
+      console.log("즐겁다!");
+    }
+
+    // addEventListener방식  문서 상 제일 위의 버튼
+    //All을 쓰면 모든 버튼
+    const btn=document.querySelector("div");
+
+    //이벤트: 휠, 클릭, 키보드 입력... 굉장히 많음
+    //첫번째 파라미터, 이벤트의 종류
+    //두번째 파라미터, 함수명만 준다.함수의 실행이 바로 되면 안되서...
+    //예약으로 걸어준다. => 콜백 : 함수 안에 함수가 들어갔다.
+    btn.addEventListener("click",showMessage);
+
+    //이런식으로 많이 씀... 재사용하지 않으니까 선언을 안한다...
+    btn.addEventListener("click",function (){
+      console.log("즐겁다!");
+    });
+    
+
+    </script>
+</body>
+</html>
