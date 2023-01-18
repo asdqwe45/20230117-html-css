@@ -1,0 +1,27 @@
+<html>
+  <head>
+  <title>My title</title>
+  </head>
+  <body>
+    <h1>A heading</h1>
+    <a class="mac" href="mcdonald.co.kr">Link text</a>
+
+    <script>
+      // const a= document.children[0].children[1].children[0].textContent;
+      // console.log(a);
+
+      // a.textContent="Abcd";
+      /* 개발을 할 때 children[0].children[1].children[0].textContent*/
+
+      const h1Tag=document.querySelector("h1");
+      console.log(h1Tag);
+
+      const mac=document.querySelector(".mac");
+      console.log(mac);
+      console.log(mac.textContent);
+      mac.textContent="맥도날드";
+      mac.href="https://naver.com";
+
+    </script>
+  </body>
+</html>
