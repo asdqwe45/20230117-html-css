@@ -1,0 +1,106 @@
+이미지 넣는 법 
+1. 백그라운드이미지
+2. 그냥 이미지
+
+경로 설정
+1. 절대경로
+2. 상대경로!!!!  ex)./...
+
+html 태크 종류
+1. h1 제목태그
+2. ul list(ol ul)
+3. a태그 링크
+4. p태크 문단
+
+css 적용법 3가지
+1. 태그 안에서 적용법(추천X):inline속성
+2. <head>안에 넣기
+3. 파일분리 링크  <link rel="stylesheet" href="./styles.css" />
+
+js 적용법
+1. 링크  body끝나기 전에 넣는다.
+2. body안에 <script>에 넣는다.
+
+선택자 종류
+1. 태크 ()
+2. 클래스는 여러개 id는 하나만
+
+글자색까지정
+color:black;
+backgroundcolor:black;
+
+텍스트기준
+text-align:left center right justify(양쪽정렬)
+
+가운데 정렬
+1. margin:0 auto;
+2. flex justify 
+
+원만들기
+border-radius:50%;
+
+inline
+쓰여진것만 차지하기 때문에 margin이나 바꾸는 거 X
+
+block
+자신의 영역의 전체
+
+display:none; 
+
+태그들이 어디에 속하는지?
+inline    
+block    
+
+posision: 옮길 때
+
+display: 어떤식으로 보여줄지
+
+relative: 부모 기준 상대적임
+
+absolute: 스태틱이 아닌 부모를 기준
+
+스태틱:position이 아니면 스태틱임
+
+fixed: 화면에 고정
+
+
+display
+1. flex 정렬할 때 난이도높음 연습해야함
+
+zIndex: 화면 겹칠 때 순서 정함.
+
+자바 자바스크립트 상관X
+
+자바스크립트 제이쿼리 상관O
+타입 알아 둬야 함
+Number
+string
+boolean
+object 등등
+
+재선언 가능여부
+var 가능
+lef 불가능 변경은 가능
+const 불가능
+
+객체나 배열은 변경 가능
+
+== VS === 타입까지 비교한다
+
+object 접근법
+
+dom document.querySelector("")
+
+addEventListener : 해당 버튼 이벤트 시
+
+textContent  : 태그안에 있는 텍스트기준
+value: 값
+
+createElement : 태그 만들 때
+
+innerHTML?
+
+classList 추가 삭제 변경 확인 대체
+
+bootstrap
+cdn : 가까운 서버로 한다.
