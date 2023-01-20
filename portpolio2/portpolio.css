@@ -1,0 +1,13 @@
+
+
+.carousel-item>img{
+  /* vw,vh
+  브라우저 크기에 대응
+  %는 부모의 영향을 받는다
+   */
+   height:100vh;
+}
+/* 상단바를 위로 */
+nav{
+  z-index: 1;
+}
