@@ -1,0 +1,57 @@
+*{
+}
+div{
+  width:100%;
+  height:800px;
+  display: flex;
+  border:1px solid black;
+  flex-direction: column;
+}
+header{
+  border:1px solid black;
+  flex:1;
+}
+main{
+  flex:5;
+  border:1px solid black;
+  display: flex;
+}
+footer{
+  border:1px solid black;
+  flex:1;
+}
+.section1{
+  border:1px solid black;
+  flex:1;
+}
+.section2{
+flex:4;
+display: flex;
+flex-direction: column;
+}
+.article1{
+  flex:1;
+  border:1px solid black;
+  display: flex;
+}
+.article2{
+  border:1px solid black;
+  flex:1;
+}
+.article3{
+  border:1px solid black;
+  flex:1;
+}
+
+.nav1{
+  border:1px solid black;
+  flex:1;
+}
+.nav2{
+  border:1px solid black;
+  flex:1;
+}
+.nav3{
+  border:1px solid black;
+  flex:1;
+}

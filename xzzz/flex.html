@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* .newbox{
+      border:1px solid black;
+padding-left:auto;
+    }
+    .oldbox {
+border: 1px solid black;
+background-color: gray;
+color: white;
+margin-top: 100px; 
+margin-bottom: 100px;
+margin-left: 100px;
+margin-right: 100px;
+padding-top: 50px;
+padding-bottom:50px;
+padding-left: 50px;
+padding-bottom: 50px;
+text-align: center;
+box-shadow: 10px 10px 20px 2px blue;
+} */
+    /* .container1 {
+      border: 1px solid black;
+      position: relative;
+      height: 500px;
+      margin: 0 auto;
+    }
+
+    .container2 {
+      display: inline-block;
+      position: absolute;
+    }
+
+    .container3 {
+      display: inline-block;
+      position: absolute;
+    }
+
+    .container4 {
+      display: inline-block;
+      position: absolute;
+    } */
+
+    div {
+      border: 1px solid black;
+      height: 1000px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      border: 1px solid black;
+
+      flex: 1;
+    }
+
+    main {
+      border: 1px solid black;
+      display: flex;
+      flex: 5;
+      flex-direction: row;
+    }
+
+    footer {
+      flex: 1;
+      border: 1px solid black;
+
+    }
+
+    nav {
+      border: 1px solid black;
+      flex: 1;
+    }
+
+    section {
+      border: 1px solid black;
+      flex: 4;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .upper-contents {
+      border: 1px solid black;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .upperContents1 {
+      border: 1px solid black;
+      flex: 1;
+    }
+
+    .upperContents2 {
+      border: 1px solid black;
+      flex: 1;
+    }
+
+    .upperContents3 {
+      border: 1px solid black;
+      flex: 1;
+    }
+
+    .middle-contents {
+      border: 1px solid black;
+      flex: 1;
+    }
+
+    .lower-contents {
+      border: 1px solid black;
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <header>header</header>
+    <main>
+      <nav>nav</nav>
+      <section>
+        <div class="upper-contents">
+          <div class="upperContents1">upperContents1</div>
+          <div class="upperContents2">upperContents2</div>
+          <div class="upperContents3">upperContents3</div>
+        </div>
+        <div class="middle-contents">middle-contents</div>
+        <div class="lower-contents">lower-contents</div>
+      </section>
+    </main>
+    <footer>footer</footer>
+  </div>
+
+  <!-- <div class="container1">
+    <div class="container2">
+      container2container2container2container2container2container2container2container2ontainer2ontainer2ontainer2r2ontainer2r2ontainer2r2ontainer2r2ontainer2r2ontainer2r2ontainer2r2ontainer2
+    </div>
+    <div class="container3">container3</div>
+    <div class="container4">container4</div>
+  </div> -->
+
+  <!-- <div class="newbox">
+    뉴박스
+    <div class="oldbox">올드박스</div>
+  </div> -->
+
+</body>
+
+</html>

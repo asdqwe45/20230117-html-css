@@ -1,0 +1,28 @@
+*{
+  border:1px solid black;
+}
+header{
+  display: flex;
+justify-content: space-between;
+}
+.section1{
+text-align: center;
+}
+.part1-1{
+  font-size: 10px;
+
+}
+.part1-2{
+  font-size: 40px;
+}
+.section2{
+  width:250px;
+  
+}
+.sns{
+justify-content: space-between;
+}
+.part2-3{
+  text-align: center;
+align-items: ;
+}

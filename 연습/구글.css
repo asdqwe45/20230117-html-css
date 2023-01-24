@@ -1,0 +1,68 @@
+*{
+  border:1px solid black;
+}
+section{
+  position:relative;
+}
+div{
+  display: inline;
+  
+}
+.section1{
+  font-size: 12px;
+  height:20px;
+}
+.part1-1{
+position:absolute;
+right:220px;  
+
+}
+.part1-2{
+  width:10px;
+  height:10px;
+  position:absolute;
+right:170px;  
+background-image: url(./search.png);
+  background-size: cover;
+  margin-top: 2px;
+}
+.part1-3{
+  position:absolute;
+right:70px;  
+  
+}
+.part1-4{
+  position:absolute;
+right:5px;  
+}
+.section2{
+  height:80px;
+  position: relative;
+}
+.hat{
+  height:40px;
+  width:40px;
+  background-image: url(./logo.png);
+top:50%;
+position: absolute;
+transform: translateY(-50%);
+left:20px;
+}
+.naver{
+  height:40px;
+  width:200px;
+  background-image: url(./search.png);
+position: absolute;
+top:50%;
+transform: translateY(-50%);
+left:100px;
+}
+.search{
+position: absolute;
+width:40%;
+padding:20px;
+height:10px;
+left:50%;
+top:50%;
+transform: translate(-50%,-50%);
+}

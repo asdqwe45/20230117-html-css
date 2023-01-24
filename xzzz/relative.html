@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    header {
+      border: 1px solid black;
+      width: 100px;
+      height: 100px;
+      position: relative;
+    }
+
+    .top {
+      /*
+fiexd의 기준점 : 최상위
+relative의 기준점 : 현재 태그의 위치
+width가 줄어들지 않는다.
+*/
+      top: 5px;
+      position: absolute;
+    }
+
+    .right {
+      position: absolute;
+      right: 10px;
+    }
+
+    .bottom {
+      position: absolute;
+      bottom: 10px;
+    }
+
+    .left {
+      position: absolute;
+      left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="top">top</div>
+    <div class="right">right</div>
+    <div class="bottom">bottom</div>
+    <div class="left">left</div>
+
+  </header>
+
+
+</body>
+
+</html>
