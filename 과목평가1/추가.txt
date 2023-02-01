@@ -1,0 +1,41 @@
+HTML 은 마크업 언어
+img
+p
+절대경로 vs 상대경로
+input type 종류
+
+* 시멘틱태그 => 의미론적웹. SEO 상승
+UI UX => 유저 경험은 UX 다.
+CSS 적용법 3가지
+선택자 종류
+font-color 이런거 없다. color 로 글자색 지정
+가운데정렬: 텍스트 또는 엘리먼트
+border-radious 로 원 만드려면?
+display: block vs inline
+어떤 태그가 block 이고 inline 인가?
+position
+
+flex
+z-index
+Java 는 JavaScript 와 아무 관련없음
+
+Node.js 는 JS 의 런타임이다. 즉, JS 로 만든 발명품
+JavaScript 타입
+var vs let vs const
+const 로 선언된 배열과 객체의 값 변경 가능?
+
+null vs undefined
+== vs ===
+object: 각각의 값에 접근하는법 연습
+dom 가져오려면 document
+querySelector, querySelectorAll
+addEventListener
+textContent 는 뭐 가져오는거임?
+createElement
+classList
+bootstrap 은 깔아야함
+
+bootstrap 사용 시 장점이 뭘까?
+cdn
+
+min.js 는 엔터, 띄어쓰기 등 모든 용량 줄인 파일
