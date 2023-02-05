@@ -15,13 +15,41 @@
     </style>
   </head>
   <body>
+    
     <h1 class="font-size">HI</h1>
     <button class="button1">빨간색으로 만들자</button>
     <button class="button2">까만색으로 만들자</button>
     <button class="black-or-red">까만 빨강</button>
     <button class="is-red">빨강이 있느냐</button>
     <button class="red-to-blue">빨강을 파랑으로</button>
+
     <script>
+      const h1 = document.querySelector("h1");
+      const btn1 = document.querySelector(".button1");
+      const btn2 = document.querySelector(".button2");
+      const btn3 = document.querySelector(".black-or-red");
+      const is_red = document.querySelector(".is-red");
+      const red_to_blue = document.querySelector(".red-to-blue");
+
+      btn1.addEventListener("click", function () {
+        h1.classList.add("font-red");
+      });
+      btn2.addEventListener("click", function () {
+        h1.classList.remove("font-blue");
+      });
+      btn3.addEventListener("click", function () {
+        h1.classList.toggle("font-red");
+      });
+      is_red.addEventListener("click", function () {
+        const flag = h1.classList.contains("font-red");
+        console.log(flag);
+      });
+      red_to_blue.addEventListener("click", function () {
+        h1.classList.replace("font-red","font-blue");
+      });
+    </script>
+
+    <!-- <script>
       const h1 = document.querySelector("h1");
       const btn1 = document.querySelector(".button1");
       const btn2 = document.querySelector(".button2");
@@ -49,6 +77,6 @@
       redToBlue.addEventListener("click", function () {
         h1.classList.replace("font-red", "font-blue");
       });
-    </script>
+    </script> -->
   </body>
 </html>

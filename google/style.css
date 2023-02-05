@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+/* header*/
+
+.header-nav-list-wrapper {
+  display: flex;
+  justify-content: end;
+  align-items:center;
+  padding:0;
+  list-style: none;
+}
+.header-nav-list-wrapper>li{
+  margin-left:10px;
+}
+.toggle-button{
+  border:1px solid #eee;
+  background-color: black;
+  color:white;
+  padding:5px 8px;
+  border-radius: 5px;
+  cursor:pointer;
+}
+/* // */
+
+/* main */
+.main-container{
+  text-align:center;
+  width:50%;
+  height:500px;
+  position:absolute;
+  right:50%;
+  bottom:50%;
+  transform:translate(50%,50%);
+}
+
+
+/* 로고 파트 */
+
+/* 검색파트 */
+.search-container{
+  position:relative;
+  margin-top:50px;
+}
+
+.search-icon{
+  width:17px;
+  position:absolute;
+  top:13px;
+  left:10px;
+}
+#search-input{
+  width:100%;
+  height:44px;
+  border:1px solid #ddd;
+  border-radius: 50px;
+  padding-left:40px;
+}
+/* 아이콘파트 */
+.bookmark-section{
+  margin-top:40px;
+  display: flex;
+  justify-content: center;
+}
+.bookmark-item{
+  width:112px;
+  text-decoration: none;
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bookmark-item:hover{
+  cursor:pointer;
+  opacity:0.5;
+}
+.img-icon-wrapper{
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  background-color: #f2f3f5;
+  font-size:24px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.img-icon-wrapper >img{
+  width:60%;
+  height:60%;
+}
+.bookmark-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  max-width:600px;
+  min-width:430px;
+}
+/* 다크모드 파 */
+
+.btn-dark-mode{
+  color:black;
+  background-color: white;
+}
+
+.body-dark{
+  background-color: black;
+}
+.bookmark-Text{
+  color:white;
+}
+
+.another-Text{
+  color:white;
+}

@@ -1,41 +1,41 @@
-HTML 은 마크업 언어
-img
-p
-절대경로 vs 상대경로
-input type 종류
+1. HTML 은 마크업 언어
+2. img
+3. p
+4. 절대경로 vs 상대경로
+5. input type 종류
 
-* 시멘틱태그 => 의미론적웹. SEO 상승
-UI UX => 유저 경험은 UX 다.
-CSS 적용법 3가지
-선택자 종류
-font-color 이런거 없다. color 로 글자색 지정
-가운데정렬: 텍스트 또는 엘리먼트
-border-radious 로 원 만드려면?
-display: block vs inline
-어떤 태그가 block 이고 inline 인가?
-position
+6. * 시멘틱태그 => 의미론적웹. SEO 상승
+7. UI UX => 유저 경험은 UX 다.
+8. CSS 적용법 3가지
+9. 선택자 종류
+10. font-color 이런거 없다. color 로 글자색 지정
+11. 가운데정렬: 텍스트 또는 엘리먼트
+12. border-radious 로 원 만드려면?
+13. display: block vs inline
+14. 어떤 태그가 block 이고 inline 인가?
+15. position
 
-flex
-z-index
-Java 는 JavaScript 와 아무 관련없음
+16. flex
+17. z-index
+18. Java 는 JavaScript 와 아무 관련없음
 
-Node.js 는 JS 의 런타임이다. 즉, JS 로 만든 발명품
-JavaScript 타입
-var vs let vs const
-const 로 선언된 배열과 객체의 값 변경 가능?
+19. Node.js 는 JS 의 런타임이다. 즉, JS 로 만든 발명품
+20. JavaScript 타입
+21. var vs let vs const
+22. const 로 선언된 배열과 객체의 값 변경 가능?
 
-null vs undefined
-== vs ===
-object: 각각의 값에 접근하는법 연습
-dom 가져오려면 document
-querySelector, querySelectorAll
-addEventListener
-textContent 는 뭐 가져오는거임?
-createElement
-classList
-bootstrap 은 깔아야함
+23. null vs undefined
+24. == vs ===
+25. object: 각각의 값에 접근하는법 연습
+26. dom 가져오려면 document
+27. querySelector, querySelectorAll
+28. addEventListener
+29. textContent 는 뭐 가져오는거임?
+30. createElement
+31. classList
+32. bootstrap 은 깔아야함
 
-bootstrap 사용 시 장점이 뭘까?
-cdn
+33. bootstrap 사용 시 장점이 뭘까?
+34. cdn
 
-min.js 는 엔터, 띄어쓰기 등 모든 용량 줄인 파일
+35. min.js 는 엔터, 띄어쓰기 등 모든 용량 줄인 파일

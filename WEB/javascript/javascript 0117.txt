@@ -11,9 +11,12 @@
 var      안쓴다. 절대 쓰지마!!! 가끔 코딩 선배들이 쓰는 데 뭐라하진마라. (재선언 가능)
 let       안쓴다. 반복문 i 돌릴 때
 const   이걸 써라. 
-          근데 작동 안되면 let써라.
-          초기화 안될 수 있는 걸 막아줌
-변수를 바꿀 일이 별로 없다. 있다면  let써라!!!!!
+        근데 작동 안되면 let써라.
+        초기화 안될 수 있는 걸 막아줌
+        변수를 바꿀 일이 별로 없다. 있다면  let써라!!!!!
+// var : 재선언과 값 변경 가능
+// let : 변경 가능
+// conts: 다 불가능 선언 시 바로 초기화 해야됨
 
 자료형
 
@@ -37,6 +40,13 @@ console.log(typeof undefined);
 null 의도적으로 비워놓음(뭘 넣을지 몰라서 그냥)
 
 undefined 의도치 않게 비어있음.
+
+// 정수, 실수 : number
+// string : ch[]
+// boolean : true,false
+// typeof(undefined) : undefined 의도치 않게 비어있음
+// typeof(null) : object  의도적으로 비워 둠.
+
 
 arr 같은 타입으로 일치시키세요!!!!
     크기선언 안함

@@ -59,6 +59,6 @@ searchInput.addEventListener("keyup", function (e) {
     //새창으로 열기
     // window.open
     // <a href="" target="_blank"> 새창으로 열기 </a>
-    window.open(googleSearch + e.target.value, "_black");
+    window.open(googleSearch + e.target.value, "_blank");
   }
 });
