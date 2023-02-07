@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>배열</div>
+    <div>
+      <input type="text" class="array" />
+    </div>
+    <div>포함 되어는지 확인할 값</div>
+    <div>
+      <input type="text" class="search" />
+    </div>
+    <div>
+      <button>결과</button>
+    </div>
+    <div class="result"></div>
+    <script>
+      const searchNum = document.querySelector(".search");
+      const arrayNum = document.querySelector(".array");
+      const btn = document.querySelector("button");
+      const result=document.querySelector(".result");
+       // false
+
+      btn.addEventListener("click", function () {
+        const Array1 = arrayNum.value.split(",");
+      const result1 = Array1.some((element) => element == searchNum.value);
+        if (result1 == true) {
+          result.textContent="포함";
+        } else {
+          result.textContent="미포함";
+        }
+      });
+    </script>
+  </body>
+</html>

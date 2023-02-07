@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>서버에서 데이터를 가져오자!</h1>
+    <button>가져오기</button>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.3.2/dist/axios.min.js"></script>
+    <script>
+      //방법 1
+      // asinc와 await가 없으면 왜 undefined가 뜰까????
+      // 자바스크립트 영역 밖에서의 일을 할때 => 자바스크립트 입장에서 늦을 거 같다고 판단
+      // async 개발자의 말만 따라라 
+      // 기다려야 할 곳에 await 작업이 끝날 때까지 기다려라
+      // const getData = async () => {
+      //   try {
+      //     // 1. 늦어질 거 같다. 그래서 데이터를 받지 않았어도 사용자에게 뭐라도 보여줄려고 그냥 실행
+      //     const response = axios.get( // get 그 주소에 가서 가져와
+      //       "https://jsonplaceholder.typicode.com/todos"
+      //     );
+      //     // 2.
+      //     console.log(response.data); // undefined는 에러가 아니다.
+      //   } catch (error) {
+      //     console.log(error);
+      //   }
+      // };
+
+      //방법 2   try-catch 안될 떄
+      const getData = () => {
+        axios
+          .get("https://jsonplaceholder.typicode.com/todos")
+          // get이 성공하면 then으로 가고 get이 실패하면 catch로
+          .then((response) => {
+            console.log(response.data);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      };
+
+      const btn = document.querySelector("button");
+      btn.addEventListener("click", getData);
+    </script>
+  </body>
+</html>
