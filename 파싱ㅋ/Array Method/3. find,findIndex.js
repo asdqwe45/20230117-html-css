@@ -16,7 +16,7 @@ console.log(result2);
 
 // findIndex -> 해당하는 index를 가져온다.
 
-const result3=inventory.findIndex(li=>li.name="B");
+const result3=inventory.findIndex(li=>li.name==="B");
 console.log(result3);
 
 // 실습

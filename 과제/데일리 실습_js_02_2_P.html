@@ -22,19 +22,22 @@
     ]
 
     users.forEach((data)=>{
-      console.log(data.name);
+     // console.log(data.name);
     })
     const datas=users.filter((data)=>{
       return data.isMarried===true;
     })
-    console.log(datas);
+    //console.log(datas);
     const tom=users.find(data=>data.name==="Tom");
-    console.log(tom);
+   // console.log(tom);
     const newUsers=users.map((data)=>{
       data.isAlive=true;
     })
-    console.log(users);
-    
+    //console.log(users);
+    const totalBalance=users.reduce((acc,cur)=>{
+      return acc+cur.balance;
+    },0)
+    console.log(totalBalance);
   </script>
 </body>
 </html>

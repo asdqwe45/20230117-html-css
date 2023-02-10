@@ -25,7 +25,7 @@ x.forEach((value)=>{
 console.log(cnt);
 
 const test2=(value)=>{if(value%2==1)cnt++;};
-x.forEach(test2);3
+x.forEach(test2);
 console.log(cnt);
 
 const arr2=[1,2,3,4,5];

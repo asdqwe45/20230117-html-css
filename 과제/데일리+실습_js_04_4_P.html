@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .done {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <form action="/todos/">
+    <input type="text">
+    <button>todo 추가</button>
+    <ul></ul>
+  </form>
+  <ul></ul>
+
+<script>
+  const form = document.querySelector('form')
+
+  function addTodo (event) {
+    event.preventDefault();
+    const input = document.querySelector("input");
+    const ul = document.querySelector("ul");
+    if(input.value !== "") {
+      const li = document.createElement("li");
+      const span = document.createElement("span");
+      const todoText = document.createTextNode(input.value);
+      const btn = document.createElement("button");
+      const btnText = document.createTextNode("X");
+      
+      btn.addEventListener(("click"), (evt)=>{
+        evt.target.parentElement.remove();
+      })
+
+      span.appendChild(todoText);
+      btn.appendChild(btnText);
+      li.appendChild(span);
+      li.appendChild(btn);
+
+      ul.appendChild(li);
+    }
+    input.value = "";
+  }
+
+  form.addEventListener('submit', addTodo)
+</script>
+</body>
+</html>
