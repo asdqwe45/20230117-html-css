@@ -1,0 +1,115 @@
+JS는 동적 : 버튼 누르면 짠!
+정적인 WEB : 소개 페이지, 우리주소는 여기입니다.
+
+
+node.js : 브라우저 밖으로 벗어난 자바스크립트 ex) 서버
+
+설치해서 쓰는 것 => 내 컴퓨터의 통제권을 갖는 것
+
+실행기 => runtime
+
+ECMA Script 법전 규칙
+
+=== vs == 
+
+var, let. const 호이스팅 => 세개 다 발생 대신 let과 const는 접근이 불가능
+
+함수표현식: 함수의 이름이 없다.(=무명함수)
+const sampleFunc = function () {
+
+}
+화살표 함수: 함수의 이름이 없다.(=무명함수)
+const sampleFunc =  () => {
+
+}
+함수 호이스팅이 아닌 변수 호이스팅이 발생한다.
+
+함수와 함수의 사용이 자리가 바꿔도 되지만 쓰지마라
+function abc()
+{
+return "abc";
+}
+console.log(abc());
+
+각 각의 엘리먼트는 수정 삭제 가능
+const arr=[1,2,3];
+arr[2]=1; //된다
+arr=[2,4,6]; //안된다
+
+dom 접근할 때
+document.querySelector(".title");
+옛날식
+getElementById() (해당 아이디 기준 가져옴)
+getElementsByClassName (해당 클래스네임 기준 가져옴)
+
+const btn=document.querySelector("button");
+btn.addEventListener("click",(()=>console.log("hi")));
+
+-----------------------------------------------------
+인라인 이벤트 방식 (시험에 세게 나온다)
+<button onclick="sayHi()">
+
+const sayHi = () => console.log("hi")
+
+
+
+classList 5가지
+
+keydown , keyup ??
+
+=========================================
+이번주
+
+콜백함수 : 함수 안에 들어가는 함수 즉시 실행X 
+
+
+slice spllice
+
+파싱할 때
+forEach,map,filter,reduce
+
+array loop : 원본 데이터를 건들이지 않겠다!!!!
+성능의 장점 X
+
+indexOf, concat, push, split...
+
+버블링
+캡쳐
+위임
+
+HTTP Request Method
+
+GET - 가져오기
+POST - 작성
+PUT - 전부 다 수정
+PATCH - 하나 수정
+DELETE - 삭제
+
+
+
+min.js
+- 용량을 줄여서 속도 업
+
+데이터표준 JSON
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

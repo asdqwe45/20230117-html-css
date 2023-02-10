@@ -61,4 +61,4 @@ const sampleObject = {};
 if (sampleObject === {}) { // !를 쓰면 가동석이 떨어짐 긍정이 더 가독성이 좋음!!! 
   console.log("데이터 없음");
 } else {
-  console.log("데이터 있음");
+  console.log("데이터 있음")};

@@ -25,7 +25,7 @@ const bucketList=[
   },
 ]
 
-const filterBucketList1=bucketList.filter(data=>data.done===false);
+const filterBucketList1=bucketList.filter(data=>data.done  ===false);
 console.log(filterBucketList1);
 
 // const filterBucketList2=bucketList.filter(data=>!data.done);
