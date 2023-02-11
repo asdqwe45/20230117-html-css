@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    console.log('Hi')
+
+    const pro=new Promise((resolve,reject)=>{
+      setTimeout(function () {
+      console.log('SSAFY')
+      resolve();
+    }, 3000)
+    });
+pro.then(()=>{
+  console.log('Bye')
+}).catch(()=>{
+  
+})
+    
+  </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    console.log("고민하는 동안 다른 것을 하고 있겠소");
+
+    const pro=new Promise((resolve,reject)=>{
+      setTimeout(()=>{
+        console.log("나 이제 주문하겠소");
+        resolve();
+        //reject();
+      },1000)
+    });
+
+    console.log("서빙 서빙 서빙");
+
+    pro.then(()=>{
+      console.log("GOOD");
+    }).catch(()=>{
+      console.log("OH NO");
+    });
+
+  </script>
+</body>
+</html> -->

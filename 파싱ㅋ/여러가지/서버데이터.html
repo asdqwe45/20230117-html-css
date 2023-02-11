@@ -32,7 +32,7 @@
       //방법 2   try-catch 안될 떄
       const getData = () => {
         axios
-          .get("https://jsonplaceholder.typicode.com/todos")
+          .get("https://dog.ceo/api/breeds/image/random")
           // get이 성공하면 then으로 가고 get이 실패하면 catch로
           .then((response) => {
             console.log(response.data);

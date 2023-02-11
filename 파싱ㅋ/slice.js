@@ -14,6 +14,6 @@ console.log(names);
 console.log(newNames);
 
 var index=names.indexOf(item);
-if(index!==-1){``````````````````````````````````````````````````}
+if(index!==-1){{``````````````````````````````````````````````````}
 names.splice(index,1);
 }
