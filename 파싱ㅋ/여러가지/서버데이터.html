@@ -14,12 +14,12 @@
       //방법 1
       // asinc와 await가 없으면 왜 undefined가 뜰까????
       // 자바스크립트 영역 밖에서의 일을 할때 => 자바스크립트 입장에서 늦을 거 같다고 판단
-      // async 개발자의 말만 따라라 
+      // async 개발자의 말만 따라라
       // 기다려야 할 곳에 await 작업이 끝날 때까지 기다려라
       // const getData = async () => {
       //   try {
       //     // 1. 늦어질 거 같다. 그래서 데이터를 받지 않았어도 사용자에게 뭐라도 보여줄려고 그냥 실행
-      //     const response = axios.get( // get 그 주소에 가서 가져와
+      //     const response =await axios.get( // get 그 주소에 가서 가져와
       //       "https://jsonplaceholder.typicode.com/todos"
       //     );
       //     // 2.

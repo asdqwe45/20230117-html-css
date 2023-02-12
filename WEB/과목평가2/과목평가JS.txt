@@ -12,7 +12,7 @@ ECMA Script 법전 규칙
 
 === vs == 
 
-var, let. const 호이스팅 => 세개 다 발생 대신 let과 const는 접근이 불가능
+var, let, const 호이스팅 => 세개 다 발생 대신 let과 const는 접근이 불가능
 
 함수표현식: 함수의 이름이 없다.(=무명함수)
 const sampleFunc = function () {
@@ -53,7 +53,7 @@ const sayHi = () => console.log("hi")
 
 
 
-classList 5가지
+classList 5가지 add toggle replace contains remove
 
 keydown , keyup ??
 
