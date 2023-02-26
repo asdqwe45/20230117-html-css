@@ -85,7 +85,7 @@ int main()
 	// 맨 위 (우선순위가 가장 높은 값) return : q.top()
 	// 비어있는가? q.empty()
 
-	/*priority_queue<int>pq;
+	priority_queue<int>pq;
 
 	for (int i = 0; i < 5; i++)
 		pq.push(arr[i]);
@@ -93,7 +93,7 @@ int main()
 	while (!pq.empty()) {
 		cout << pq.top();
 		pq.pop();
-	}*/
+	}
 
 	// #2 MIN heap
 
