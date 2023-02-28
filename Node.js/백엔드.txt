@@ -1,0 +1,81 @@
+sudo apt update
+sudo apt install mysql-server
+mysql --version
+sudo mysql_secure_installation
+
+
+$ sudo apt update
+$ sudo apt install mysql-server
+$ mysql --version
+$ sudo mysql
+
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by '*ssafy09';
+
+sudo mysql_secure_installation
+
+엔터
+엔터
+y
+y
+y
+y
+
+sudo mysql -u root -p
+
+
+mysql> CREATE USER 'ssafy'@'%' IDENTIFIED BY '*ssafy09' 유저 생성
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'ssafy'@'%'      권한 부여
+mysql> FLUSH PRIVILEGES
+
+
+mysql -u ssafy -p
+
+mysql> CREATE DATABASE ssafy DEFAULT CHARACTER SET utf8
+COLLATE utf8_general_ci
+
+mysql> SHOW DATABASES;
+
+mysql> USE ssafy;
+
+mysql> SHOW TABLES;
+
+CREATE TABLE `menus` (
+  `menu_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `menu_name` VARCHAR(20) NOT NULL,
+  `menu_description` TEXT NOT NULL,
+  `menu_img_link` TEXT NOT NULL
+) default character set utf8 collate utf8_general_ci;
+
+INSERT INTO `menus`
+(`menu_name`, `menu_description`, `menu_img_link`)
+VALUES
+("아이스 아메리카노", "여름엔 아아가 진리", "/menus/ice-americano.jpg");
+
+INSERT INTO `menus`
+(`menu_name`, `menu_description`, `menu_img_link`)
+VALUES
+("카페라떼", "Latte is horse", "/menus/cafe-latte.jpg");
+
+INSERT INTO `menus`
+(`menu_name`, `menu_description`, `menu_img_link`)
+VALUES
+("복숭아 아이스티", "내 입안 복숭아향 가득", "/menus/peach-icetea.jpg");
+
+
+
+ubuntu 에서
+
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+
+
+bind-address            = 127.0.0.1
+=> bind-address            = 0.0.0.0
+
+ctrl O
+ctrl X
+
+$ cat /etc/mysql/mysql.conf.d/mysqld.cnf | grep bind
+
+$ sudo service mysql restart
+
+
