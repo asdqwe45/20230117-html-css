@@ -55,8 +55,10 @@ int RemoveBlock_BFS(Coord startPoint)
         int nx = now.x + (directX[t] * p);
         if (ny < 0 || nx < 0 || ny >= height || nx >= width)
           break;
+          
         if (isReg[ny][nx])
           continue;
+
         if (block[ny][nx] == 0)
           continue;
 
