@@ -8,7 +8,7 @@
 2. 그래프  
     - 노드 값
     - 노드 관계
-    =>  BFS(재귀), DFS(while,Queue)
+    =>  BFS(while,queue), DFS(재귀)
     => BFS와 DFS 중 가장 빠른 것 선택
 
 그래프 초기화(=배열 초기화)

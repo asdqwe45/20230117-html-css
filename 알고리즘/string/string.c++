@@ -30,8 +30,8 @@ int main()
 	// cout << s.length();
 	
 	// quiz 2 : 두개의 문자열이 동일하면 1 아니면 0을 출력하는 프로그램
-	char a[100] = "abc";
-	char b[100] = "bcd";
+	// char a[100] = "abc";
+	// char b[100] = "bcd";
 	
 	// 두개의 길이가 다르면 둘이 같은 문자열일 수 없다.
 	/*if (strlen(a) != strlen(b))
@@ -53,10 +53,10 @@ int main()
 	// a != b : -1 -> a가 b보다 사전순으로 앞에 온다.
 	// a != b : 1 -> a가 b보다 사전순으로 뒤에 온다.
 
-	if (strcmp(a, b) == 0)
-		cout << 1;
-	else
-		cout << 0;
+	// if (strcmp(a, b) == 0)
+	// 	cout << 1;
+	// else
+	// 	cout << 0;
 
 	//string class
 	string c = "abc";// 97 98   :  아스키코드 숫자로 비교
@@ -106,8 +106,8 @@ int main()
 	cout << '\n';
 
 	// quiz #4. 복사하는 거
-	char a[100] = "string";
-	char b[100];
+	// char a[100] = "string";
+	// char b[100];
 	/*int Length = strlen(a);
 	for (int i = 0; i <= Length; i++)
 		b[i] = a[i];*/
@@ -117,9 +117,9 @@ int main()
 	// cstring 
 	// strcpy -> string copy
 	// strcpy(복사하고자 하는 문자열의 위치, 복사하려고 하는 문자열)
-	strcpy(b, a);
-	cout << b;
-	cout << '\n';
+	// strcpy(b, a);
+	// cout << b;
+	// cout << '\n';
 
 	// string class
 	string a2 = "string2";
@@ -145,10 +145,10 @@ int main()
 	b3[idx] = '\0';*/
 	cout << b3;
 
-	cstring 
-	 전체 본사 = strcpy
-	 일부분 복사 =>
-	 strncpy(복사를 해서 저장할 위치, 복사를 할 위치, 복사를 할 구간 크기)
+	// cstring 
+	//  전체 본사 = strcpy
+	//  일부분 복사 =>
+	//  strncpy(복사를 해서 저장할 위치, 복사를 할 위치, 복사를 할 구간 크기)
 	
 // 3번
 	
@@ -173,35 +173,35 @@ int main()
 
 	// quiz #6. 문자열에서  특정 substring이 등장하는 위치
 
-	char a[100] = "string";
-	char b[100];
-	cin >> b;
-	int Len1 = strlen(a);
-	int Len2 = strlen(b);
-	int i, j,flag=0;
-	for (i = 0; i < Len1-Len2; i++) {
-		flag = 0;
-		for (j = 0; j < Len2; j++)
-			if (a[i + j] != b[j]) {
-				flag = 1;
-				break;
-			}
-		if (flag == 0)
-			break;
-	}
-	cout << i;
+	// char a[100] = "string";
+	// char b[100];
+	// cin >> b;
+	// int Len1 = strlen(a);
+	// int Len2 = strlen(b);
+	// int i, j,flag=0;
+	// for (i = 0; i < Len1-Len2; i++) {
+	// 	flag = 0;
+	// 	for (j = 0; j < Len2; j++)
+	// 		if (a[i + j] != b[j]) {
+	// 			flag = 1;
+	// 			break;
+	// 		}
+	// 	if (flag == 0)
+	// 		break;
+	// }
+	// cout << i;
 
 	// cstring
 	// strst(A,B) ->
     // 찾으려고 하는 문자열이 A에 존재한다면, 처음 찾은 위치를 기준으로
     // 남은 문자열 전체를 반환
-     cout << strstr(a,b);
-    char a[100] = "string";
-    char b[100];
-    cin >> b;
-    	if (strstr(a, b) != NULL)
-    		cout << 1<<'\n';
-    	cout << strstr(a, b);
+    //  cout << strstr(a,b);
+    // char a[100] = "string";
+    // char b[100];
+    // cin >> b;
+    // 	if (strstr(a, b) != NULL)
+    // 		cout << 1<<'\n';
+    // 	cout << strstr(a, b);
     
 	
 	// string class
