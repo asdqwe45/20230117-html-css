@@ -1,0 +1,151 @@
+프론트엔드
+과거
+  브라우저에서 동작한는 코드 구현
+  서버 지식? 없어도 됬지만
+현재
+  프론트엔드 서버도 알아야 함.
+  과거에 비해 할 일이 늘어났다!!
+
+SSR(MPA) vs CSR(SPA)
+
+
+SSR(MPA)
+        - 전통적
+        - 서버 사이드 렌더링
+        - 서버에서 화면을 만든다
+        - 클라이언트는 완성된 HTML을 서버로부터 받는다.
+        - 서버로부터 계속 html 을 요청
+        - 서버에 부하 큼
+        - 처음엔 빠르고 나중엔 느리다.
+        - 새로고침 발생
+        - SEO(검색엔지 최적화) 강함 왜냐하면 자바스크립트 적음.
+
+
+CSR(SPA) react, angular, vue
+        - 현대적
+        -  클라이언트 사이드 렌더링
+        - 클라이언트에서 화면을 만든다
+        - 클라이언트는 최소한의 HTML을 받은 후 서버로부터 데이터 받아서 HTML 변경
+        - 최초에 한 번 하나의 HTML을 서버로부터 받은 후 더 이상 요청하지 않는다.
+        - 서버의 부하 적음      
+        - 처음엔 느리고 나중에 빠르다
+        - 새로고침 발생 안함(최대 강점)
+        - SEO 약함!!!? 좀 있음 엎어짐( 구글에서 js로 쓸 수 있음)
+
+
+
+
+SPA Framework
+
+Angular
+React (0) (내가 제일 잘 나가)
+Vue   (0)
+Svelte (신흥)
+
+SPA를 구현하려면 꼭 프레임워크를 써야 할까?
+Single Page Application
+꼭 필요하지 않다. 페이지가 하나면...
+
+
+
+Vue 특징
+  js보다 쉬운 화면 조작
+     v-if, v-for,...
+  Virtual DOM 사용(가상돔)
+  컴포넌트 (협업하기 좋음.따로 만들어서 조립 굳)
+  progressive Javascript framework
+  SPA(CSR) 서버 부담을 덜어줌
+
+ // Vue 의 SSR(MPA) Version => Nuxt.js
+
+Virtual DOM
+  DOM 안에 요소들(엘리먼트)이 많아지면 핸들링 어려움
+  그래서 Real Dom이 아닌, Virtual DOM 사용해 조작
+  변경사항이 많은 웹페이지에는 Virtual DOM이 유리
+  Virtual DOM : 가상의 페이지에서 변경 후에 html에 한 번 요청
+
+컴포넌트
+  화면의 각 부분을 나눠 조립식으로 개발
+  재사용성 증가
+  유지보수 용이
+
+MVVM 패턴 (Model View ViewModel)
+  view는 화면 model은 데이터
+  
+  vue의 패턴
+  model, viewmodel,view
+  view에서 입력받음, model에 데이터 저장
+  vue 는 둘의 중간에 있는 viewmodel에서 담당
+  view에서 이벤트 => viewmodel의 콜백함수를 호출
+  viewmodel 데이터변경 => view, model 즉시 변경
+  view 와 model 사이 의존성 제거
+  view 와 model 간에 알아야 할 것들을 몰라도 됨.
+
+
+data
+  vue instance에서 변수 생성 시 사용
+  
+methods
+  vue instance에서 메서드 생성 시 사용
+
+바인딩
+  단방향 : {{  }}, v-bind
+      태크의 속성을 변경할 때, props로 내려 보낼 때
+      축약  :
+      데이터가 변한지 않고 보여주기만 할 뿐
+  양방향 : v-model  
+      사용자 입력 -> 데이터 변함
+      축약 없음
+
+  v-on
+     이벤트 받을 때 사용
+     emit 부모에서 받을 때
+     ex) v-on:click  축약 @click
+
+  v-if="seen"  seen이라는 데이터를 묻는 것!!
+  v-else-if
+  v-else
+
+  v-for key를 항상 써야함. 데이터의 키 중 식별가능한것 없다면 인덱스로 씀.
+
+  vue CLI
+     vue 프로젝트 생성 시 사용
+     vuex, vue-router 등 추가 기능
+     $ vue create [프로젝트이름]
+     babel - js 호환성을 위해 사용
+
+
+vue router
+   서드 파티 라이브러리 : 설치해야함 (vue개발자가 만든 거 아님)
+   라우터에 컴포넌트 매핑
+   어떤 url에서 렌더링할지 결정
+
+props
+   부모 컴포넌트 -> 자식 컴포넌트로 데이터 전달
+   v-bind 축약 :
+   자식에서 받을 때
+        props:[]
+   props 와 property, process의 상태값?? 말도 안되는 소리 설명X
+
+emit
+  자식 컴포넌트에서, 부모의 함수호출
+  자식 컴포넌트에서, 부모 컴포넌트로 이벤트전달
+  v-on 축약 @
+  자식 컴포넌트에서 파라미터를 넘겨서 부모의 데이터 변경 가능?
+props/emit은 부모자식 관계여야만 하나? ㅇㅇ
+
+
+
+vuex
+  상태(state) 관리 패턴 + 라이브러리
+  모든 컴포넌트의 중앙 저장소
+  props/emit의 반복 사용으로, 데이터 관리 힘들어서 사용
+  당연히, props/emit과 같이 사용 가능
+  state 변경 시 => mutations
+
+Bootstrap Vue
+  컴포넌트 방식으로 Bootstrap 사용
+  class는 똑같을까? class는 같다
+  bootstrap-vue, bootstrap 둘 다 npm 사용해 설치해야함
+
+         
