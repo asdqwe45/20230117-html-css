@@ -1,0 +1,53 @@
+ls     현재 위치의 파일 리스트
+ls -al 상세정보
+
+pwd 현재 위치
+
+출발지와 경유지와 도착지를 알아야 한다.
+
+cd .. : 상위 디렉토리로 간다.
+cd 경로/   : 그 경로로 간다.
+cd ~  : home으로 간다.
+cd /   : root로 간다.
+cd - : 이전 디렉토리로 간다.
+
+clear : 터미널 명령들 삭제
+
+ctrl + insert / shift + insert를 사용할 것
+
+touch : 빈파일 생성
+touch ./bts : 현재 경로에 bts라는 빈파일 생성
+        ../     이전 경로
+
+rm : 파일 삭제
+rm ./bts : 현재 경로에 있는 bts라는 파일 삭제
+
+
+mkdir : 디렉토리 생성
+mkdir a b c
+rm -r a b c
+
+
+mv
+이름 바꾸기 : mv 파일 바꿀이름
+이동하기    : mv 파일 옮길곳
+
+cp 복사
+  cp 파일 경로
+  -r 옵션
+
+
+sudo : super user
+apt : 현재 파일
+apt install
+apt list
+apt list --installed
+
+-- : 풀네임
+-  : 축약
+
+삭제할 때
+sudo apt purge sl
+
+history 기록 다 나옴
+!번호 치면 그 명령어 쓸 수 있음

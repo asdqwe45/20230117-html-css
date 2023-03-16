@@ -1,0 +1,10 @@
+sudo apt install vim
+
+sudo vi /etc/apt/sources.list
+
+:%s/kr.archive.ubuntu.com/mirror.kakao.com/g
+
+
+$ sudo reboot
+$ sudo shutdown -h now (안전한 종료)
+
