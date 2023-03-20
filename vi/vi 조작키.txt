@@ -1,0 +1,25 @@
+vi
+  파일 생성
+    -> $vi 경로
+  
+  파일 저장
+    -> :wq
+vi 모드 3가지
+command / edit / visual
+(default)
+
+$와 #의 차이점
+$ : 일반 사용자 
+# : 루트 사용자
+
+command 모드
+ gg : 맨위로
+ G  : 맨 아래로
+ dd : 한 줄 잘라내기
+ :/asd : asd찾기
+    -밑으로 : n
+    -위로 : N
+ :%s/asd/JONY/g : 찾아서 바꾸기
+ :set nu  -> 번호 설정
+ :set nonu -> 번호 삭제
+
