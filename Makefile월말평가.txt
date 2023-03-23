@@ -1,0 +1,16 @@
+Makefile
+
+main.c  run.c  run.h
+
+jony.lee >> jony
+
+jony
+
+jony.lee >> 10
+
+10 9 8 7 6 5 4 3 2 1
+
+jony.lee >> 
+jony.lee >> 
+jony.lee >> 
+
