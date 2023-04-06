@@ -1,0 +1,140 @@
+4.17    1시간
+과목평가
+
+시스템 프로그래밍 + 네트워크 프로그래밍
+다음 주 금요일 네트워크 문제 밭
+
+PC
+ - 범용
+ - Windows, Mac, Linux
+ - 고성능
+ - 비싸
+ - 고전력
+ - 안정
+
+ vs
+임베디드
+ - 특수목적용
+ - Linux, RTOS, 펌웨어
+ - 저성능
+ - 싸다
+ - 저전력
+ - 불안정
+
+RTOS
+ - Real Time OS
+ - 완전히 실시간은 아니지만 최소한의 반응속도 보장
+ - 제품 하드웨어에 리눅스를 넣기엔 애매... 하지만 쓰레드를 사용해야 할 때 고려
+
+리눅스 > RTOS > 펌웨어
+
+프로그램 vs 프로세스 vs 프로세서
+
+POSIX
+ - IEEE 표준
+ - 여러 IS에서 만든 표준 API를 문서화
+ - UNIX OS에서 표준으로 사용
+ - 윈도우는 8버전부터 지원 안함. 안드로이드는 일부 지원
+
+kernel 
+ - OS의 핵심이 되는 프로그램
+ - 시스템 전체 통제
+ - HW와 APP 모두 관리
+ - 스케줄링, 보안, 자원관리
+
+시스템 콜
+ - 다른말로 syscall
+ - APP이 커널에 접근하기 위한 인터페이스
+ - 유저는 함부로 커널을 못 건들이기 때문에 시스템콜로 요청해야 함
+
+
+Low Level API
+ - 느리다
+ - open(), close() ...
+ - 장치 제어 가능
+
+HIGH Level API
+ - 빠르다
+ - fopen, fclose()...
+ - 장치 제어 불가능
+
+man page 단축 숫자+shift+k
+
+파일디스크립터
+ - 파일 자체는 큰 바이너리기 때문에, 숫자를 부여해서 대신 관리
+ - 1번부터 시작하고, 유저가 지정하는 파일디스크립터는 3번부터시작
+ - 한 번 부여되면 중복이 됩니까? ㄴㄴ
+
+lseek - 오프셋 위치 조절
+
+.data 초기화 된 전역변수
+.bss  초기화 안된 전역변수
+.text  코드 영역
+.heap 
+네개는 각각의 쓰레드가 공유한다.
+.stack
+
+mutex
+ - mutal exclusion
+ - critical section 작업 시의 안전장치
+ 
+
+void pointer  어떤 타입을 받을 지 몰라서... 길이도 준다.
+
+process vs thread
+
+process
+ - 실행중인 프로그램
+ - 독립적인 메모리공간
+
+thread
+ - 프로세스 내 실행되는 단위
+ - 각 쓰레드끼리 .stack은 공유안함
+ - 즉, 지역변수 제외하고 메모리영역을 공유하므로 뮤텍스 써라.
+
+context switching
+ - cpu 코어가 실행중이던 프로세스에서 레지스터를 백업하면서
+ 다른 프로세스로 전환되는 동작. 이걸 해주니깐 수천개 프로세스가
+ 동시 동작 가능(사실 동시 아님)
+컨텍스트 스위칭을 언제 할 것인지 기준을 정하네 "스케줄링"
+많이 일어나면 성능이 낮아짐. 많이 안 할수록 좋음
+
+Linux process state machine
+ - R : Running / Runable
+ - D : Uninterruptible Sleep (mkdir)
+ - S : interruptible Sleep
+ - T : Stopped  // SIGSTOP
+ - Z : Zombie
+
+htop
+ - top 의 대안
+ - 작업관리자 - 시스템 모니터링할 때 사용
+ - kill = signal
+
+signal
+ SIGSTOP -> (T) stopped // ctrl + Z
+ SIGCONT -> stopped => running
+ SIGUSR1 -> 그냥 신호
+ SIGKILL -> 프로세스 종료
+ SIGTERM -> 프로세스 종료 요청
+ SIGINT -> 프로세스 인터럽트 ctrl + C
+ SIGALRM -> 특정 시간 지난 후 함수 호출, 갱신 가능
+
+ncurses
+  터미널 환경에서 TEXT 기반 UI 작성 라이브러리
+  하지만 GUI아님
+  헤더 필수 <ncurses.h>
+  빌드 시 옵션 지정 필수 -lncursesw
+
+
+4.24
+월말평가
+
+두 개의 process 간 signal 주고받기
+(send.c  /  receive.c)
+
+WDT
+
+쓰레드 구현 복급 철저
+동작 캡쳐 이미지 일일히 찍을 것
+readme.txt를 정성스럽게 쓸 것. 정성을 들이지 않으면 제가 감점
