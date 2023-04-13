@@ -1,0 +1,20 @@
+ - 네트워크 분류
+ - 프로토콜
+ - IP
+ - TCP
+ - Ethernet
+ - 임베디드 시스템
+ - Ethernet 케이블
+ - 스위치
+ - Process State
+ - ncurses
+ - htop
+ - mutex
+ - system call
+ - 4885
+ - man
+ - context switching
+ - process memory
+ - critical section
+ - 라우터
+ - 만능 포인터
