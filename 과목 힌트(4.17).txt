@@ -1,20 +1,92 @@
  - 네트워크 분류
+   LAN  :  Local Area Network 255*255 부서단위
+  WAN  :  Wide Area Network LAN과 LAN을 연결 서울지사와 부산지사를 연결
+  INTERNET  :  전세계를 연결
+
  - 프로토콜
+   통신을 하는 대상이 지켜하는 규식
+     다른 프로토콜을 쓰면 통신안됨
+     SW/HW 프로토콜 둘 다 존재
+     SW프로토콜 예시) Handshake, date format, 오류 검출법
+     Handshaek : 3번 주고 받는다.
+     date format : 헤더가 다르면 안된다.
+     오류검출법 : 검사
+
  - IP
+   인터넷 프로토콜(인터넷에서만 쓴다.)
+     비연결성 비신뢰성
+     비연결성 : 데이터 전달 보장 안됨
+     비신뢰성 : 데이터 순서 보장 안됨
+
  - TCP
+   IP의 특징 그대로
+     비연결성 비신뢰성
+     데이터 전달 및 순서 보장 안됨
+     속도빠름 (동영상, 음성)
+
  - Ethernet
+   CSMD/CD - LAN통신 : 랜통신의 표준인 이더넷에서 사용하는 프로토콜
+     IP가 아니라 MAC주소(물리적 주소) 사용
+   요즘도 쓴다.
+
  - 임베디드 시스템
+
+
+
+
  - Ethernet 케이블
+     UTP 케이블(랜선)
+   STP(방해전파 호일 추가)
+     CAT5e,CAT6,CAT7 등 존재
+     선이 오래되면 속도 하락
+
  - 스위치
+   스위칭러브라고도 불림
+     외부 네트워크와 연결 가능? X
+     MCA이 있는 포트에 신호전달
+
  - Process State
+
  - ncurses
+   터미널 환경에서 TEXT 기반 UI 작성 라이브러리
+     하지만 GUI아님
+     헤더 필수 <ncurses.h>
+     빌드 옵션 지정 필수 -lncursesw
+
  - htop
+   top의 대안
+     작업관리자 - 시스템 모니터링할 때 사용
+     kill = signal
+
  - mutex
+   mutal exclusion
+   ciritical section 작업 시의 안전장치
+
  - system call
+   다른 말로 시스콜
+     APP이 커널에 접근하기 위한 인터페이스
+     유저는 함부로 커널을 못 건들이기 때문에 시스템콜로 요청해야 함
+
  - 4885
+   
  - man
+   man page  단축 숫자+shift+k
+
  - context switching
+   CPU 코어가 실행중이던 프로세스에서 레지스터를 백업하면서 다른 프로세스로 전환되는 동작. 이걸 해주니깐 수천개 프로세스가 동시 동작 가능(사실 동시 동작 아님)
+   컨텍스트 스위칭을 언제 할 것이니 기준을 정한다.(스케줄링)
+     많이 일어나면 성능이 낮아짐. 많이 안 할수록 좋음
+
  - process memory
+
  - critical section
+
+
+
  - 라우터
+   공유기를 홈 라우터라고 함
+     인터넷
+     라우터가 없으면 인터넷 사용 불가
+     외부 네트워크와 연결 가능
+
  - 만능 포인터
