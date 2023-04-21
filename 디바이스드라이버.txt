@@ -1,0 +1,15 @@
+1. sudo mknod /dev/nobrand c 100 0
+2. sudo chmod 666 /dev/nobrand
+3. dmesg -w   =>  커널 로그
+4. make
+5. sudo insmod nobrand.ko
+6. ./app
+7. sudo rmmod nobrand
+8. make clean
+
+# app.c => 애플리케이션 파일(사용자에게 제공)
+# nobrand.c => 디바이스 드라이버 파일(커널 모듈)
+# Makefile => 빌드
+
+
+
