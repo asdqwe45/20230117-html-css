@@ -1,0 +1,11 @@
+gpio base address : 0x7E20 0000 (LEGACY)
+
+LEGACY
+Main Peripheral     : 0x7c00 0000
+GPIO base address : 0x7E20 0000
+
+offset : 0x0220 0000
+
+개발용 (  ARM address map)
+Main Peripheral     :  0xFC00 0000 
+GPIO base address :  0xFC00 0000 + 0x0220 0000 => 0xFE20 0000
